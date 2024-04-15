@@ -1,14 +1,13 @@
-import OutputMessage from "./component/OutputMessage"
+import { Outlet } from "react-router-dom"
+import Header from "./routes/Header"
 
 function App() {
 
   return (
-    <header>
-      <nav>
-        <OutputMessage message="Github API" />
-      </nav>
-      
-    </header>
+    <>
+      <Header />
+      <Outlet />
+    </>
   )
 }
 
