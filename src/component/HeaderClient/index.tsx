@@ -1,6 +1,6 @@
-import OutputMessage from "../../component/OutputMessage";
+import OutputMessage from "../OutputMessage";
 
-export default function Header() {
+export default function HeaderClient() {
     return (
         <header>
             <nav>
