@@ -1,7 +1,14 @@
+import OutputMessage from "./component/OutputMessage"
+
 function App() {
 
   return (
-    <h1>hello</h1>
+    <header>
+      <nav>
+        <OutputMessage message="Github API" />
+      </nav>
+      
+    </header>
   )
 }
 

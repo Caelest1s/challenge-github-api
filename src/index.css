@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --gap-color-bg-header-primary:#1890FF;
+  --gap-color-font-header-primary:#FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", roboto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+nav {
+  width: 1440px;
+  height: 62px;
+  padding-left: 41px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--gap-color-font-header-primary);
+  background-color: var(--gap-color-bg-header-primary);
 }
