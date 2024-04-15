@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
+
   /* HEADER */
   --gap-color-bg-header-primary: #1890FF;
   --gap-color-font-header-primary: #FFFFFF;
   --gap-color-font-secondary: #7E7E7E;
 
-  /* BUTTON*/
+  /* BUTTON */
   --gap-color-bg-button-primary: #1890FF;
   --gap-color-font-button-primary: #FFFFFF;
+
+  /* SEARCHBAR */
+  --gap-color-font-searchbar-primary: #000000;
+  --gap-color-bg-searchbar-primary: #FFFFFF;
+  --gap-color-border-searchbar-primary: #D9D9D9;
 }
 
 * {
@@ -24,7 +30,7 @@ header {
 }
 
 nav {
-  width: 1440px;
+  width: 100%;
   height: 62px;
   padding-left: 41px;
   display: flex;
@@ -35,6 +41,6 @@ nav {
   background-color: var(--gap-color-bg-header-primary);
 }
 
-.mt-20 {
-  margin-top: 20px;
+.mt-30 {
+  margin-top: 30px;
 }

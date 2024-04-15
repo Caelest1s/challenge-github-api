@@ -1,14 +1,14 @@
 .gap-default-button {
     width: 100px;
     height: 40px;
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
     font-weight: 400;
+    
     color: var(--gap-color-font-button-primary);
     background-color: var(--gap-color-bg-button-primary);
-
     border-radius: 4px;
     border-color: var(--gap-color-bg-button-primary);
     cursor: pointer;
