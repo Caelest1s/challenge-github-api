@@ -1,0 +1,11 @@
+.gap-container-githubsearch{
+    width: 1250px;
+    margin: 50px 90px;
+    padding: 50px 30px;
+    background-color: var(--gap-color-bg-container-githubsearch-primary);
+}
+
+.gap-message {
+    font-size: 38px;
+    font-weight: 500;
+}

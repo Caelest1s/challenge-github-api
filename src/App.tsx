@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import ClientHome from "./routes/ClientHome"
+import GithubSearch from "./routes/ClientHome/GithubSearch"
 import Welcome from "./routes/ClientHome/Welcome"
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ClientHome />} >
-            <Route index element={<Welcome />} />
-            <Route path="initial" element={<Welcome />} />
-
+            <Route index element={<Navigate to="home" />} />
+            <Route path="home" element={<Welcome />} />
+            <Route path="search" element={<GithubSearch />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,7 +2,6 @@
     width: 298px;
     height: 40px;
     padding: 0 17px;
-
     color: var(--gap-color-font-searchbar-primary);
     background-color: var(--gap-color-bg-searchbar-primary);
     border: 1px solid var(--gap-color-border-searchbar-primary);

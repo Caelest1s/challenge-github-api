@@ -1,12 +1,13 @@
-import OutputMessage from "../OutputMessage";
+import { Link } from "react-router-dom";
 
 export default function HeaderClient() {
     return (
         <header>
             <nav>
-                <OutputMessage message="Github API" />
+                <Link to="/">
+                    Github API
+                </Link>
             </nav>
-
         </header>
     )
 }

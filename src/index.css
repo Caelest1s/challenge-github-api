@@ -15,6 +15,9 @@
   --gap-color-font-searchbar-primary: #000000;
   --gap-color-bg-searchbar-primary: #FFFFFF;
   --gap-color-border-searchbar-primary: #D9D9D9;
+
+  --gap-color-bg-container-githubsearch-primary: #E6F7FF;
+
 }
 
 * {
@@ -39,6 +42,11 @@ nav {
   font-weight: 500;
   color: var(--gap-color-font-header-primary);
   background-color: var(--gap-color-bg-header-primary);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }
 
 .mt-30 {
