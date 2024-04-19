@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-
   /* HEADER */
-  --gap-color-bg-header-primary: #1890FF;
   --gap-color-font-header-primary: #FFFFFF;
   --gap-color-font-secondary: #7E7E7E;
+  --gap-color-bg-header-primary: #1890FF;
 
   /* BUTTON */
-  --gap-color-bg-button-primary: #1890FF;
   --gap-color-font-button-primary: #FFFFFF;
+  --gap-color-bg-button-primary: #1890FF;
 
   /* SEARCHBAR */
   --gap-color-font-searchbar-primary: #000000;
   --gap-color-bg-searchbar-primary: #FFFFFF;
   --gap-color-border-searchbar-primary: #D9D9D9;
 
+  /* GITHUB SEARCH/RESULT*/
+  --gap-color-font-primary: #737373;
+  --gap-color-font-secondary: #1890FF;
   --gap-color-bg-container-githubsearch-primary: #E6F7FF;
-
+  --gap-color-bg-result-primary: #F5F5F5;
+  --gap-color-bg-result-secondary: #FFFFFF;
 }
 
 * {
@@ -47,6 +50,44 @@ nav {
 a {
   color: unset;
   text-decoration: none;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  
+  color: var(--gap-color-font-button-primary);
+  background-color: var(--gap-color-bg-button-primary);
+  border-radius: 4px;
+  border-color: var(--gap-color-bg-button-primary);
+  cursor: pointer;
+}
+
+.gap-searchbar {
+  width: 298px;
+  height: 40px;
+  padding: 0 17px;
+  color: var(--gap-color-font-searchbar-primary);
+  background-color: var(--gap-color-bg-searchbar-primary);
+  border: 1px solid var(--gap-color-border-searchbar-primary);
+  border-radius: 4px;
+}
+
+.gap-searchbar::placeholder {
+  font-size: 16px;
+}
+
+.gap-searchbar:focus {
+  outline: none;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 .mt-30 {
