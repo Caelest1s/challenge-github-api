@@ -39,7 +39,7 @@ export default function GithubSearch() {
                     />
                 </div>
                 <div className="mt-30">
-                    <Link to={`/user/${userName.gitName}`} key={userName.gitName}>
+                    <Link to={`user/${userName.gitName}`} key={userName.gitName}>
                         <button type="submit" name="findUser">Encontrar</button>
                     </Link>
                 </div>

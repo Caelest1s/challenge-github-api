@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import FormResult from "../../../../components/FormResult";
 import { gitUserDTO } from "../../../../models/user";
+// import * as userService from '../../../../services/user-service';
 
 type Props = {
     usuario: gitUserDTO;
@@ -25,7 +26,7 @@ export default function GithubResult() {
     );
 
     useEffect(() => {
-        axios.get("https://api.github.com/users/Caelest1s")
+        axios.get("https://api.github.com/users/layonel-londe")
             .then(response => {
                 console.log(response.data);
                 setUser(response.data);
@@ -42,7 +43,7 @@ export default function GithubResult() {
         <>
             {
                 /* '{user && ...}' verificar se o objeto está vindo preenchido ou undefined or null 
-                * current usying ternary for manipulation diferent results
+                * current use ternary for manipulation diferent results
                 */
                 user
                     ? <FormResult user={user} />

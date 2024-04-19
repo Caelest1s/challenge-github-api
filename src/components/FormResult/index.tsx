@@ -13,7 +13,7 @@ export default function FormResult({ user }: Props) {
 
     return (
         <div className="gap-container-form">
-            <img src={""} alt="me" className="gap-photo" />
+            <img src={user.avatar_url} alt="me" className="gap-photo" />
             <form onSubmit={handleFormSubmit} className="gap-form">
                 <output className="gap-form-title">Informações</output>
                 <output className="gap-form-output" > URL: {user.url} </output>
