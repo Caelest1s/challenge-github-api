@@ -3,44 +3,44 @@ import { Link, Outlet } from 'react-router-dom';
 import OutputMessage from '../../../components/OutputMessage';
 import './style.css';
 
-type userNameGit = {
-    gitName: string;
-}
-
 export default function GithubSearch() {
 
-    const [userName, setUserName] = useState<userNameGit>({
-        gitName: ''
-    });
+    const [userName, setUserName] = useState<string>('');
 
     function handleFindUser(event: any) {
-        //(...userName) faz manter o que já tenho de dados
-        setUserName({...userName, gitName: event.target.value})
+        setUserName(event.target.value);
     }
 
     //para n* input's -> obtém respectivo nome & valor de elemento(input, button, etc) e altera no local adequado/exato/correto
-    function handleFindUserBetterForAllInputs(event: any) {
-        const value = event.target.value;
-        const name = event.target.name;
-        setUserName({...userName, [name]: value})
-    }
+    // function handleFindUserBetterForAllInputs(event: any) {
+    //     const value = event.target.value;
+    //     const name = event.target.name;
+    //     //(...userName) faz manter o que já tenho de dados
+    //     setUserName({ ...userName, [name]: value })
+    //     // Ele está reclamando com o (... userName) pois esperava que fosse um objeto e agora foi modificado para uma simples const
+    // }
+
+    // function imHere(event: any) {
+    //     console.log(`Element: ${event.target.name}`);
+    //     console.log(`Nome: ${userName}`);
+    // }
 
     return (
         <>
             <div className="gap-container-githubsearch">
-                <div className="gap-message"><OutputMessage message="Encontre um perfil Github" /></div>
+                <div className="gap-message"> <OutputMessage message="Encontre um perfil Github" /> </div>
                 <div className="mt-30">
                     <input name="inputName"
-                        value={userName.gitName}
+                        value={userName}
+                        onChange={handleFindUser}
                         type="text"
                         placeholder="Usuário Github"
                         className="gap-searchbar"
-                        onChange={handleFindUser}
                     />
                 </div>
                 <div className="mt-30">
-                    <Link to={`user/${userName.gitName}`} key={userName.gitName}>
-                        <button type="submit" name="findUser">Encontrar</button>
+                    <Link to={`user/${userName}`} key={userName}>
+                        <button type="submit" name="findUser" >Encontrar</button>
                     </Link>
                 </div>
             </div>

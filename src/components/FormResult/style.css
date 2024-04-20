@@ -22,12 +22,14 @@
 }
 
 .gap-form-output {
-    height: 40px;
+    padding: 0 10px;
     margin-top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     border-radius: 4px;
     color: var(--gap-color-font-primary);
     border: 1px solid var(--gap-color-border-searchbar-primary);
-    padding: 0 10px;
 }
 
 .gap-form-title {
