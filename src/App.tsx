@@ -16,6 +16,7 @@ function App() {
             <Route path="search" element={<GithubSearch />} >
               <Route path="user/:userName" element={<GithubResult />} />
             </Route>
+            <Route path="*" element={<Navigate to="/home" />} />
           </Route>
         </Routes>
       </BrowserRouter>

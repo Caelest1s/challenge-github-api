@@ -1,0 +1,10 @@
+.gap-container-err-msg {
+    width: 1250px;
+    margin: 64px auto;
+}
+
+.gap-err-user {
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--gap-color-font-default-black);
+}

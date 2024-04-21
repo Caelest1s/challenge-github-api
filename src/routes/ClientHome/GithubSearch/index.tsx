@@ -17,7 +17,7 @@ export default function GithubSearch() {
     //     const name = event.target.name;
     //     //(...userName) faz manter o que já tenho de dados
     //     setUserName({ ...userName, [name]: value })
-    //     // Ele está reclamando com o (... userName) pois esperava que fosse um objeto e agora foi modificado para uma simples const
+    //     // Ele está reclamando com o (... userName) pois esperava que fosse um objeto e agora foi modificado para uma const
     // }
 
     // function imHere(event: any) {
