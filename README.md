@@ -14,18 +14,18 @@ Para isto foi utilizado a biblioteca Axios que permite uma comunicação da apli
 * Axios
 * Hooks (UseState/UseEffect)
 
-## Page-view 
+## Page/view 
 ### page-initial 
 <img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-welcome.JPG" />
 
-### page-search 
+### search 
 <img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-search.jpg" />
 
-### page-user-1 
+### find-user-Caelest1s 
 <img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-caelestis.JPG" />
 
-### page-user-2 
+### find-user-layonel-londe 
 <img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-layonel-londe.jpg" />
 
-### page-notfound-user 
+### notfound-user 
 <img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-error-user.jpg" />
