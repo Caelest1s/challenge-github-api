@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# Find Github User 
+### Sobre 
+O intuito do projeto é buscar e apresentar dados e informações de usuários extraídas da plataforma GitHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Tecnologias 
+Para construção deste projeto foi utilizado Vite, React, Typescript, Javascript, HTML e CSS
 
-Currently, two official plugins are available:
+### Desafio 
+O desafio deste projeto é buscar o usuário e obter as informações deste que se encontram hospedadas no github. 
+Para isto foi utilizado a biblioteca Axios que permite uma comunicação da aplicação com o github, através de chamadas assíncronas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Main Tools 
+* Routers
+* Axios
+* Hooks (UseState/UseEffect)
 
-## Expanding the ESLint configuration
+## Page-view 
+### page-initial 
+<img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-welcome.JPG" />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### page-search 
+<img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-search.jpg" />
 
-- Configure the top-level `parserOptions` property like this:
+### page-user-1 
+<img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-caelestis.JPG" />
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### page-user-2 
+<img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-layonel-londe.jpg" />
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### page-notfound-user 
+<img src="https://github.com/Caelest1s/datafiles/blob/main/assets/github-search/github-error-user.jpg" />
