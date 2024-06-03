@@ -8,10 +8,10 @@ export default function Welcome() {
         <>
             <div className="gap-container-welcome">
                 <div className="gap-message-main">
-                    <OutputMessage message="Desafio Github API" />
+                    <OutputMessage message="Challenge Github API" />
                 </div>
                 <div className="gap-message-submain">
-                    <OutputMessage message="DevSuperior - Escola de programação" />
+                    <OutputMessage message="Encontre um usuário no GitHub" />
                 </div>
 
                 <div className="mt-30">
